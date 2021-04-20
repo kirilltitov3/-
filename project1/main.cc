@@ -3,7 +3,7 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_main.h>
 
-#include "DemoWindow.h"
+#include "PiramidWindow.h"
 
 int main(int,char **)
 {
@@ -12,7 +12,7 @@ int main(int,char **)
 	SDL_Init(SDL_INIT_EVERYTHING);
 
 	try {
-		DemoWindow w;
+		PiramidWindow w;
 
 		w.main_loop();
 	} catch (const std::exception& e) {
